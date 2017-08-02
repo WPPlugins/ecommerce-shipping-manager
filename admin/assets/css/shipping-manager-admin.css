@@ -1,0 +1,274 @@
+.shipping-manager-table {
+	border-collapse: collapse;
+    width: 100%;
+}
+.shipping-manager-tooltip {
+    position: absolute;
+    right: 10px;
+    transform: translatey(-50%);
+    top: 50%;
+    z-index: 999;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translatey(-50%);
+}
+.shipping-manager-tooltip img {
+	width: 18px;
+	height: 18px;
+	padding-right: 10px;
+}
+.tooltip-description {
+ 	//display: none;
+ 	visibility: hidden;
+ 	opacity: 0;
+    position: absolute;
+    top: 10px;
+    width: 200px;
+    background: rgba(0,0,0,.7);
+    color: #fff;
+    padding: 10px;
+    z-index: 9999;
+    border-radius: 5px;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.shipping-manager-tooltip:hover .tooltip-description{
+	display: block;
+	visibility: visible;
+	opacity: 1;
+}
+.shipping-manager-table-row {
+	border-top: 1px solid #E8E8E8;
+	border-bottom: 1px solid #E8E8E8;
+}
+.shipping-manager-table-row th {
+	padding: 20px 5px;
+	text-align: left;
+	width: 40%;
+	position: relative;
+}
+.shipping-manager-settings-td {
+	width: 60%;
+}
+.shipping-manager-table-row th label {
+	font-size: 16px;
+}
+.payment-method-img {
+	height: 20px;
+    vertical-align: top;
+    margin-right: 20px;
+}
+.shipping-manager-settings-td input[type="image"]{
+	vertical-align: top;
+}
+.shipping-manager-settings-td .shipping-manager-settings-div {
+	display: inline-block;
+	padding-right: 20px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+.shipping-manager-woocommerce-settings {
+	border-collapse:collapse;
+	width: 100%;
+}
+.subscription-notes-input {
+	width: 300px;
+	height: 40px;
+}
+.shipping-manager-title-description {
+	max-width: 800px;
+	margin-bottom: 15px;
+}
+.shipping-manager-public-key {
+	width: 300px;
+}
+.shipping-manager-checkmark {
+	width: 45px;
+    vertical-align: bottom;
+}
+.shipping-manager-logo-header {
+	width: 200px;
+}
+.shipping-manager-logo-inner {
+	display: inline-block;
+}
+.shipping-manager-logo-inner a {
+	margin: 0px;
+}
+.shipping-manager-header ul {
+	margin-left: 30px;
+   // margin-top: 5px;
+}
+.shipping-manager-deletelog-form {
+	display: inline-block
+}
+.checkout-form-settings {
+	margin-top: 20px;
+}
+.shipping-manager-customer-message {
+	width: 100%;
+	height: 100px;
+}
+.shipping-manager-save, .shipping-manager-upload {
+	text-align: center;
+	margin-right: 40px;
+    background-color: #F01E14;
+    border: 1px solid #F01E14 !important;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.shipping-manager-header {
+	width: 100%;
+	padding: 10px;
+	background-color: #565656;
+}
+.shipping-manager-header  ul {
+	
+}
+.shipping-manager-header ul li {
+	display: inline-block;
+	list-style: none;
+	padding-right: 20px;
+}
+.shipping-manager-header ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	border-right: 1px solid #fff;
+    padding-right: 20px;
+}
+.shipping-mananger-upload-field {
+	width: 70%;
+}
+@media(max-width: 1024px){
+.shipping-mananger-upload-field {
+	width: 80%;
+}
+}
+#shipping-messages {
+	padding: 30px;
+	border: 1px solid red;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	z-index: 99999;
+	font-size: 16px;
+	display: none;
+	background-color: #fff;
+}
+#success-messages {
+	padding: 30px;
+	border: 1px solid green;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	z-index: 99999;
+	font-size: 16px;
+	display: none;
+	background-color: #fff;
+}
+.shipping-manager-errors, 
+.shipping-messages-success {
+	color: #000;
+}
+#shipping-messages .close,
+#success-messages .close {
+	position: absolute;
+	top: 0px;
+    right: 0px;
+}
+#shipping-messages img,
+#success-messages img {
+	width: 25px;
+}
+.shipping-file-example {
+	margin-left: 30px;
+}
+.shipping-file-example img {
+	width: 150px;
+}
+.upload-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: rgba(0,0,0,0.4);
+	display: none;
+}
+.shipping-manager-loader {
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 11em;
+  height: 11em;
+  border-radius: 50%;
+  background: #ffffff;
+  background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.shipping-manager-loader:before {
+  width: 50%;
+  height: 50%;
+  background: #ffffff;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.shipping-manager-loader:after {
+  background: transparent;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.shipping-log-entry {
+	margin-top: 10px;
+}
+.shipping-manager-checkmark {
+	width: 45px;
+    vertical-align: bottom;
+}
